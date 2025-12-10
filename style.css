@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Clean, academic font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1em; /* Adjust this value for more or less space */
+}
+
+/* Main Container Layout */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Sidebar / Profile Styling */
+.profile-section {
+    flex: 1; /* Takes up 1 part of space */
+    text-align: center;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.photo-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the photo circular */
+    margin-bottom: 20px;
+    border: 3px solid #f0f0f0;
+}
+
+.profile-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.institution {
+    color: #777;
+    margin-bottom: 20px;
+    /* font-size: 0.9rem; */
+}
+
+.social-links {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Main Content Styling */
+.content-section {
+    flex: 2; /* Takes up 2 parts of space */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid #0066cc; */
+    /* color: #0066cc; */
+    display: inline-block;
+    /* padding-bottom: 5px; */
+}
+
+/* Publications List Styling */
+.pub-list {
+    list-style: none;
+}
+
+.pub-item {
+    margin-bottom: 25px;
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 1.0rem;
+    display: block;
+}
+
+.pub-authors {
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.pub-venue {
+    font-style: italic;
+    color: #666;
+    /* margin-bottom: 5px; */
+    font-size: 0.9rem;
+}
+
+.link-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #0066cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .profile-section {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+}
