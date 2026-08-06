@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #0066cc;
+    color: rgb(68, 121, 78);
     text-decoration: none;
 }
 
@@ -126,7 +126,7 @@ h2 {
     font-size: 0.85rem;
     font-weight: 600;
     margin-right: 10px;
-    color: #0066cc;
+    color: rgb(68, 121, 78);
 }
 
 /* Footer */
